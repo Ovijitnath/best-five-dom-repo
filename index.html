@@ -18,7 +18,7 @@
 <body class="body">
     <!-- Header Section Starts -->
     <header>
-        <div class="row mx-auto">
+        <!-- <div class="row mx-auto">
             <div class="col-3">
                 <img class="img-fluid" src="images/lukamodric1.jpg">
             </div>
@@ -34,13 +34,7 @@
             <div class="col-3">
                 <img class="img-fluid" src="images/logo.jpg">
             </div>
-
-
-
-        </div>
-
-
-
+        </div> -->
         </div>
         <!-- <div>
             <img src="images/benzama.jpg" alt="">
@@ -54,9 +48,11 @@
         <!-- Cards Section -->
         <section class="container pt-5 text-white">
 
+            <!-- All players section -->
             <div class="row g-2 text-center">
                 <div class="col-sm-6 col-md-8 pb-5">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- player -1 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/benzama.jpg" class="card-img-top w-full" alt="...">
@@ -67,10 +63,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -2 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/carvahal.jpg" class="card-img-top w-full" alt="...">
@@ -81,10 +79,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -3 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/tony.jpg" class="card-img-top w-full" alt="...">
@@ -95,10 +95,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -4 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/assensio.jpg" class="card-img-top" alt="...">
@@ -109,10 +111,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -5 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/vinisious.jpg" class="card-img-top w-full" alt="...">
@@ -123,10 +127,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -6 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/rodrigo.webp" class="card-img-top" alt="...">
@@ -137,10 +143,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -7 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/camvinga.webp" class="card-img-top" alt="...">
@@ -151,10 +159,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -8 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/alaves.webp" class="card-img-top" alt="...">
@@ -165,10 +175,12 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- player -9 -->
                         <div class="col">
                             <div class="card h-100 bg-black">
                                 <img src="images/velvarde.jpeg" class="card-img-top" alt="...">
@@ -179,27 +191,49 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button>Select</button>
+                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
+                <!-- Picked Player and Budget Section -->
+
                 <div class="col-6 col-sm-6 col-md-4">
                     <div class="px-4">
                         <div class="col g-5">
+
+                            <!-- Picked player section -->
                             <div class="row">
                                 <div class="p-3  bg-black">
                                     <div class="mb-5">
                                         <div class="fs-2 fw-semibold">Picked Players!</div>
-                                        <div class="text-success">
+                                        <h4 class="text-white">Selected Players : <span class="text-warning"
+                                                id="total-added-player">0</span>
+                                        </h4>
+                                        <div>
+                                            <table class="table table-dark table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Name</th>
 
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="players">
+
+                                                </tbody>
+                                            </table>
                                         </div>
 
                                     </div>
                                 </div>
                             </div><br><br><br>
+
+                            <!-- Budget section -->
                             <div class="row">
                                 <div class="p-3  bg-black">
                                     <div class="mb-5 w-full">
@@ -209,10 +243,11 @@
                                                 <h5 class="">Per Player </h5>
                                                 <input type="text" name="" id="" class="w-50">
                                             </div>
-                                            <button class="bg-info">Calculate</button>
+                                            <button class="bg-primary">Calculate</button>
                                         </div>
                                         <div class="d-flex">
-                                            <h3 class="fs-4 text-danger">Player Expenses : <span></span></h3>
+                                            <h3 class="fs-4 text-danger">Player Expenses : <span
+                                                    class="text-warning">0</span></h3>
                                         </div>
                                         <div class="pb-3 pt-3">
                                             <div class="text-success d-flex justify-content-evenly pb-3">
@@ -223,10 +258,11 @@
                                                 <h5 class="">Coach </h5>
                                                 <input type="text" name="" id="" class="w-50">
                                             </div>
-                                            <button class="bg-info">Calculate Total</button>
+                                            <button class="bg-primary">Calculate Total</button>
                                         </div>
                                         <div class="d-flex">
-                                            <h3 class="fs-4 text-danger">Total Cost : <span></span></h3>
+                                            <h3 class="fs-4 text-danger">Total Cost : <span
+                                                    class="text-warning">0</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -236,14 +272,17 @@
                 </div>
 
         </section>
+
+        <!-- Footer section starts -->
         <footer class="bg-black text-center text-white">
+            <hr class="border border-white border-1 opacity-50">
             <br>
-            <h5>All Rights Reserved @2022</h5><br><br>
+
+            <p>All Rights Reserved By @Ovijit_Nath</p><br><br>
         </footer>
+        <!-- Footer section ends -->
     </main>
     <!-- Main Section Ends -->
-
-
 
     <!-- JavaScripts Link -->
     <script src="js/common-utilities.js"></script>

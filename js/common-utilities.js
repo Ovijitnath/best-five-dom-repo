@@ -11,7 +11,7 @@ function getTextElementValueById(elementId) {
     return getTextElement;
 }
 
-function setTextElementValue(elementId, newValue) {
+function setTextElementValue(elementId, newAssignedValue) {
     const getTextElementId = document.getElementById(elementId);
-    getTextElementId.innerText = newValue;
+    getTextElementId.innerText = newAssignedValue;
 }

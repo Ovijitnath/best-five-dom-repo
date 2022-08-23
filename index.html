@@ -38,9 +38,9 @@
 
     </header>
 
-    <!-- Header Section Ends -->
+    <!-- Header Section Ends------------------------------------------------------------------------->
 
-    <!-- Main Section Starts -->
+    <!-- Main Section Starts --------------------------------------------->
     <main>
 
         <!-- Cards Section -->
@@ -61,7 +61,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button1" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +78,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button2" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +95,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button3" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +112,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button4" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +129,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button5" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +146,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button6" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +163,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button7" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +180,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button8" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +197,8 @@
                                         <p>|</p>
                                         <p>24 Assists</p>
                                     </div>
-                                    <button class="bg-info" onclick="addToPickedPlayers(this)">Select</button>
+                                    <button id="button9" class="bg-info"
+                                        onclick="addToPickedPlayers(this),disableButton(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +230,7 @@
 
                                                     </tr>
                                                 </thead>
-                                                <tbody id="players">
+                                                <tbody id="playersFromTable">
 
                                                 </tbody>
                                             </table>
@@ -281,7 +290,7 @@
         </footer>
         <!-- Footer section ends -->
     </main>
-    <!-- Main Section Ends -->
+    <!-- Main Section Ends ------------------------------------------------------------------------>
 
     <!-- JavaScripts Link -->
     <script src="js/common-utilities.js"></script>
